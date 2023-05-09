@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monte seu pedido - Platzi Pizzeria</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Pizzaria Platzi. Sabores incomparaveis, Ingredientes de alta qualidade e Compromisso de entrega.">
+    <link href="style.css" rel="stylesheet" /> <!-- para linkar com o css-->
+</head>
+
+<body id="pedidos">
+    <header class="header-pedidos">
+        <!-- Menu superior -->
+        <section id="header-esquerda">
+            <img class="logo-preta" src="imagens/logo_preta.svg" alt="logo">
+        </section>
+        <section id="header-direita">
+            <a href="index.html" class="header">Home</a>
+            <a href="sabores.html" class="header">Cardápio</a>
+            <a href="pedido.html" class="botao-escuro">Peça online</a>
+        </section>
+    </header>
+        <!-- formulario para pedido -->
+        <!-- sabor -->
+    <section id="formulario">
+        <form action="/action_page.html">
+            <fieldset id="form-pedido">
+          
+                  <div class="row">
+                    <div class="col-md-5 mb-3">
+                      <label for="sabor">Escolha o sabor da pizza:</label>
+                      <select class="custom-select " id="sabor" required>
+                        <option value="">Clique para escolher o sabor</option>
+                        <option value="1">Nordestina</option>
+                        <option value="2">Quatro Queijos</option>
+                        <option value="3">Margherita</option>
+                        <option value="4">Salame</option>
+                        <option value="5">Pepperoni</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="tamanho">Escolha o tamanho da pizza:</label>
+                      <select class="custom-select " id="tamanho" required>
+                        <option value="">Clique para escolher o tamanho</option>
+                        <option value="1">Gigante</option>
+                        <option value="2">Grande</option>
+                        <option value="3">Média</option>
+                        <option value="4">Pequena</option>
+                      </select>
+                    </div>
+            </fieldset>
+        <!-- endereço -->
+            <fieldset id="form-pedido">
+                <div class="mb-3">
+                    <label for="address">Endereço: </label>
+                    <input type="text" class="address" id="address" placeholder="Insira seu endereço aqui">
+                  </div>
+            </fieldset>    
+            
+            <p>Unicamente para o Brasil</p>
+                <div class="maps">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.0623300018656!2d-48.55158178537833!3d-27.591597128503054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739fb8dea8391%3A0x908a25d4508c4a13!2sMozza%20Pizzeria!5e0!3m2!1spt-BR!2sbr!4v1589519353157!5m2!1spt-BR!2sbr" width="1200" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="maps"></iframe>
+                </div>
+        <!-- confirma -->
+            <div id="botao-confirma">
+                <input type="submit" class="botao-confirma" value="Confirmar">
+            </div>
+        </form>
+    </section>
+        <!-- logo preta -->
+    <section id="logo-preta">
+        <img class="logomarca-preta" src="imagens/logo_preta.svg" />
+    </section>
+        <!-- footer -->
+    <footer>
+        <section id="footer-esquerda">
+            <a href="status.html">Status</a>
+            <a href="politicas.html">Privacy & Terms</a>
+            <a href="contact.html">Contact Us</a>
+        </section>
+
+        <section id="footer-direita">
+            <img src="imagens/bandeira-brasil.svg" />
+            <a href="http://instagram.com" target="_blank"> <img class="icones-social" src="imagens/Instagram_1.svg" />
+            </a>
+            <a href="http://facebook.com" target="_blank"> <img class="icones-social" src="imagens/Facebook_1.svg" />
+            </a>
+            <a href="http://twitter.com" target="_blank"> <img class="icones-social" src="imagens/Twitter_1.svg" /> </a>
+        </section>
+    </footer>
+
+</body>    

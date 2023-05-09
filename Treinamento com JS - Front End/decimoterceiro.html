@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <title>Exemplo JS</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">INÍCIO</a>
+      <a href="index.html#fgts">FGTS</a>
+      <a href="index.html#ferias">FÉRIAS</a>
+      <a href="index.html#decimo">DÉCIMO</a>
+    </nav>
+    <h3>Curso Front-End</h3>
+    <h4>EXEMPLO DE PÁGINA JAVASCRIPT</h4>
+  </header>
+
+  <!--
+    <div class="compre">
+    <h5>
+      Compre agora mesmo!
+    </h5>
+    <button>COMPRAR</button>
+  </div> 
+  -->
+
+  <br><br><br><br>
+
+  <br>
+
+  <section class="container">
+    <h2>Décimo Terceiro</h2>
+    <p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
+    <p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
+    <br><br>
+
+    <div class="resposta">
+        <script type="text/javascript">
+            let salario = prompt("Insira o seu atual salário:");
+            salario = Number(salario);
+            let primeiraParcela = salario / 2;
+            let imposto = salario / 100 * 9;
+            let segundaParcela = salario - imposto - primeiraParcela;
+
+            document.write("O salário informado foi: R$" + salario + "<br />" + "<br />");
+            document.write("A primeira parcela será de: R$" + primeiraParcela + "<br />" + "<br />");
+            document.write("O imposto calculado foi de: R$" + imposto + "<br />" + "<br />");
+            document.write("A segunda parcela será de: R$" + segundaParcela + "<br />" + "<br />");
+        </script>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+  <!--
+    <section class="container" id="formulario">
+    <h2>Selecione um Produto para mais informações</h2>
+
+    <form action="#" method="get" target="_blank">
+
+      <p class="formulario-contato">
+
+        <label for="nome">Nome</label><br>
+        <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu nome">
+      </p>
+
+      <p class="formulario-contato">
+
+        <label for="contato">Contato</label><br>
+        <input class="dados-formulario" type="tel" id="tel" name="tel" placeholder="Insira seu Whatsapp">
+      </p>
+
+      <p class="formulario-contato">
+        <input type="checkbox" id="office" name="office" value="cursos de
+            office">
+        <label for="office">Quero saber mais sobre o curso Office</label>
+        <br>
+        <br>
+        <input type="checkbox" id="web" name="web" value="cursos de desenv web">
+        <label for="web">Quero saber mais sobre o curso Web</label>
+        <br>
+        <br>
+        <input type="checkbox" id="marketing" name="marketing" value="cursos de marketing">
+        <label for="web">Quero saber mais sobre o curso Marketing digital</label>
+        <br>
+        <br>
+      </p>
+      <p class="formulario-contato">
+        <input type="reset" value="ENVIAR">
+        <input type="submit" value="LIMPAR">
+      </p>
+
+    </form>
+  </section>
+  -->
+
+  <br>
+  <br /><br />
+  <footer>
+    <h3>Curso Front-End</h3>
+    <h4>EXEMPLO DE PAGINA EM JS</h4>
+    <br />
+    <p class="texto-footer">Contatos:</p>
+    <p class="texto-footer">allandimis96@gmail.com</p>
+    <p class="texto-footer">Whatsapp: (48)996283941</p>
+    <p class="texto-footer">CNPJ: 35.802.272/0001-90</p>
+  </footer>
+</body>
+
+</html>

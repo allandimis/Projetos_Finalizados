@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <title>Exemplo JS</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">INÍCIO</a>
+      <a href="index.html#fgts">FGTS</a>
+      <a href="index.html#ferias">FÉRIAS</a>
+      <a href="index.html#decimo">DÉCIMO</a>
+    </nav>
+    <h3>Curso Front-End</h3>
+    <h4>EXEMPLO DE PÁGINA JAVASCRIPT</h4>
+  </header>
+
+  <!--
+    <div class="compre">
+    <h5>
+      Compre agora mesmo!
+    </h5>
+    <button>COMPRAR</button>
+  </div> 
+  -->
+
+  <br><br><br><br>
+
+  <br>
+
+  <section class="container">
+    <h2>Férias</h2>
+    <p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+    <p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+    <br><br>
+
+    <div class="resposta">
+        <script type="text/javascript">
+            let salario = prompt("Insira o seu atual salário e caso necessário informe casas decimais com ponto:");
+            salario = Number(salario);
+            salario = parseFloat(salario.toFixed(2));
+            
+            let abono = salario / 3;
+            abono = parseFloat(abono.toFixed(2));
+
+            let bruto = salario + abono;
+            bruto = parseFloat(bruto.toFixed(2));
+
+            let imposto = bruto / 100 * 9;
+            imposto = parseFloat(imposto.toFixed(2));
+
+            let liquido = bruto - imposto;
+            liquido = parseFloat(liquido.toFixed(2));
+            document.write("O salário informado foi: R$" + salario + "<br />" + "<br />");
+            document.write("Abono de 1/3: R$" + abono + "<br />" + "<br />");
+            document.write("Valor bruto de férias: R$" + bruto + "<br />" + "<br />");
+            document.write("Valor de impostos: R$" + imposto + "<br />" + "<br />");
+            document.write("Valor a receber: R$" + liquido);
+        </script>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+  <!--
+    <section class="container" id="formulario">
+    <h2>Selecione um Produto para mais informações</h2>
+
+    <form action="#" method="get" target="_blank">
+
+      <p class="formulario-contato">
+
+        <label for="nome">Nome</label><br>
+        <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu nome">
+      </p>
+
+      <p class="formulario-contato">
+
+        <label for="contato">Contato</label><br>
+        <input class="dados-formulario" type="tel" id="tel" name="tel" placeholder="Insira seu Whatsapp">
+      </p>
+
+      <p class="formulario-contato">
+        <input type="checkbox" id="office" name="office" value="cursos de
+            office">
+        <label for="office">Quero saber mais sobre o curso Office</label>
+        <br>
+        <br>
+        <input type="checkbox" id="web" name="web" value="cursos de desenv web">
+        <label for="web">Quero saber mais sobre o curso Web</label>
+        <br>
+        <br>
+        <input type="checkbox" id="marketing" name="marketing" value="cursos de marketing">
+        <label for="web">Quero saber mais sobre o curso Marketing digital</label>
+        <br>
+        <br>
+      </p>
+      <p class="formulario-contato">
+        <input type="reset" value="ENVIAR">
+        <input type="submit" value="LIMPAR">
+      </p>
+
+    </form>
+  </section>
+  -->
+
+  <br>
+  <br /><br />
+  <footer>
+    <h3>Curso Front-End</h3>
+    <h4>EXEMPLO DE PAGINA EM JS</h4>
+    <br />
+    <p class="texto-footer">Contatos:</p>
+    <p class="texto-footer">allandimis96@gmail.com</p>
+    <p class="texto-footer">Whatsapp: (48)996283941</p>
+    <p class="texto-footer">CNPJ: 35.802.272/0001-90</p>
+  </footer>
+</body>
+
+</html>

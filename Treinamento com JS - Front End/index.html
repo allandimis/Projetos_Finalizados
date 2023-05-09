@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <title>Exemplo JS</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#inicio">INÍCIO</a>
+      <a href="#fgts">FGTS</a>
+      <a href="#ferias">FÉRIAS</a>
+      <a href="#decimo">DÉCIMO</a>
+    </nav>
+    <h3>Curso Front-End</h3>
+    <h4>EXEMPLO DE PÁGINA JAVASCRIPT</h4>
+  </header>
+
+  <!--
+    <div class="compre">
+    <h5>
+      Compre agora mesmo!
+    </h5>
+    <button>COMPRAR</button>
+  </div> 
+  -->
+
+  <a href="#" id="inicio"></a>
+  <br /><br /><br><br>
+  
+  <section class="container">
+    <h1>TECTREINAMENTOS INFORMÁTICA</h1>
+		<h2>Cursos de Informática e Tecnologia</h2>
+		<p>Olá!</p>
+		<p>Vamos falar um pouco sobre o conteúdo a seguir.</p>
+		<p>Nesta página vamos abordar um exemplo de site com as tecnologias HTML, CSS e JavaScript.</p>
+		<p>O intuito da página é abordar com exemplos práticos o desenvolvimento de uma aplicação Web com as citadas tecnologias e não trabalhar de fato com departamento pessoal e áreas afins.</p>
+		
+
+    
+    <p>Em resumo essa página foi criada apenas a título de exemplo para alunos de cursos de desenvolvimento de sites e não deverá ser considerada como base para qualquer tipo de cálculo trabalhista.</p><br>
+    <!href para mover até fgts>
+    <a href="#" id="fgts"></a>
+  </section>
+  <br />
+  <br>
+  <br>
+  <section class="container">
+    <h2>FGTS</h2>
+    <p>O que é: O FGTS é uma poupança aberta pela empresa em nome do trabalhador que funciona como uma garantia para protegê-lo em caso de demissão sem justa causa.</p> 
+    <p>Os valores do FGTS pertencem exclusivamente ao trabalhador e, em algumas situações especiais, pode ser sacado sem que o trabalhador tenha deixado o emprego.</p>
+    <h2>Cálculo</h2>
+    <br><br>
+
+    <label for="salario">Salário</label><br>
+    <input type="number" id="salario" placeholder="Insira o seu Salário">
+    <br><br>
+    <label for="tempo">Tempo trabalhado (em meses)</label><br>
+    <input type="number" id="tempo" placeholder="Insira o numero de meses">
+    <br><br>
+    <button onclick="fgts()">CALCULAR</button>
+    <br><br>
+    <a href="#" id="ferias"></a>
+    <p><b>O valor aproximado de FGTS no período é de: R$<span></span></b></p>
+
+    <script type="text/javascript">
+    
+      let salario = document.querySelector("#salario");
+      let tempo = document.querySelector("#tempo");
+      let resultado = document.querySelector("span");
+
+      function fgts(){
+        resultado.innerHTML = parseFloat(salario.value / 100 * 8) * tempo.value;
+      }
+    </script>
+
+  
+  </section>
+  <br>
+  <br>
+  <br>
+
+  <section class="container">
+    <h2>Férias</h2>
+    <p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+    <p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+    <h2>Cálculo</h2>
+    <br><br>
+    <a href="#" id="decimo"></a>
+    <a href="ferias.html" class="link">Clique para calcular Férias</a>
+    <br><br><br>
+
+  </section>
+  <br>
+  <br>
+  <br>
+  
+  <section class="container">
+    <h2>Décimo Terceiro</h2>
+    <p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
+    <p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
+    <h2>Cálculo</h2>
+    <br><br>
+    <a href="decimoterceiro.html" class="link">Clique para calcular Décimo</a>
+    <br><br><br>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section class="container" id="grid-container">
+    <h3>Clique para saber mais</h3>
+    <div class="grid">
+
+      <div>
+        <h2>FGTS</h2>
+        <img src="img/fgts.png" alt="Imagem FGTS">
+      </div>
+        
+      <div>
+        <h2>Férias</h2>
+        <a href="ferias.html"><img src="img/ferias.png" alt="Imagem Ferias"></a>
+      </div>
+
+      <div>
+        <h2>Décimo Terceiro</h2>
+        <a href="decimoterceiro.html"><img src="img/decimo.png" alt="Imagem Decimo"></a>
+      </div>
+
+      <div>
+        <h2>Investimentos</h2>
+        <img src="img/investimentos.png" alt="Imagem Investimentos">
+      </div>
+
+      <div>
+        <h2>Renda Extra</h2>
+        <img src="img/renda-extra.png" alt="Imagem Renda Extra">
+      </div>
+
+      <div>
+        <h2>Serviços</h2>
+        <img src="img/servicos.png" alt="Imagem Serviços">
+      </div>
+
+    </div>
+  </section>
+
+  <br>
+  <!--
+    <section class="container" id="formulario">
+    <h2>Selecione um Produto para mais informações</h2>
+
+    <form action="#" method="get" target="_blank">
+
+      <p class="formulario-contato">
+
+        <label for="nome">Nome</label><br>
+        <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu nome">
+      </p>
+
+      <p class="formulario-contato">
+
+        <label for="contato">Contato</label><br>
+        <input class="dados-formulario" type="tel" id="tel" name="tel" placeholder="Insira seu Whatsapp">
+      </p>
+
+      <p class="formulario-contato">
+        <input type="checkbox" id="office" name="office" value="cursos de
+            office">
+        <label for="office">Quero saber mais sobre o curso Office</label>
+        <br>
+        <br>
+        <input type="checkbox" id="web" name="web" value="cursos de desenv web">
+        <label for="web">Quero saber mais sobre o curso Web</label>
+        <br>
+        <br>
+        <input type="checkbox" id="marketing" name="marketing" value="cursos de marketing">
+        <label for="web">Quero saber mais sobre o curso Marketing digital</label>
+        <br>
+        <br>
+      </p>
+      <p class="formulario-contato">
+        <input type="reset" value="ENVIAR">
+        <input type="submit" value="LIMPAR">
+      </p>
+
+    </form>
+  </section>
+  -->
+
+  <br>
+  <br /><br />
+  <footer>
+    <h3>Curso Front-End</h3>
+    <h4>EXEMPLO DE PAGINA EM JS</h4>
+    <br />
+    <p class="texto-footer">Contatos:</p>
+    <p class="texto-footer">allandimis96@gmail.com</p>
+    <p class="texto-footer">Whatsapp: (48)996283941</p>
+    <p class="texto-footer">CNPJ: XX.XXX.XXX/XXXX-XX</p>
+    <br>
+    <p class="texto-footer"><a href="adm.html">Acessar área administrativa</a></p>
+    <br>
+
+  </footer>
+</body>
+
+</html>

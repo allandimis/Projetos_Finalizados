@@ -1,0 +1,646 @@
+/*INICIO FONTES*/
+
+@media only screen and (max-width: 600px) {}
+
+@font-face {
+    font-family: "Aileron Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-regular.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-italic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Thin";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-Thin.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron UltraLight";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-UltraLight.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron ThinItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-thinitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron UltraLightItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-ultralightitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-light.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron LightItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-lightitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-SemiBold.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron SemiBoldItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-SemiBoldItalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-bold.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron BoldItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-bolditalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Black";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-black.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Heavy";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-heavy.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron BlackItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-blackitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron HeavyItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-heavyitalic.otf') format('woff');
+}
+
+* {
+    font-family: Aileron Regular;
+}
+
+a:hover {
+    border-bottom: 2px solid #4a90e2;
+}
+
+header > nav > a:hover {
+    border-bottom: 2px solid white;
+}
+
+/*O PEÇA ONLINE TAMBEM FICOU COM O HOVER BRANCO, QUERIA DEIXAR AZUL 
+/* PORQUE ISSO?
+
+header>nav>a:hover:after {
+    width: 49.3px;
+    height: 0;
+    border: solid 3px #ffffff;
+}
+*/
+
+/*FIM FONTES*/
+
+/*HOME*/
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0px;
+}
+
+#home{
+    background-image: url('imagens/fundo.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100%;
+}
+
+/*INICIO HEADER*/
+
+header > nav {
+    float: right;
+    font-size: 17px;
+    margin-right: 100px;
+    word-spacing: 15px;
+    font-family: "Aileron Regular";
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    word-spacing: normal;
+    padding: 1px 5px;
+}
+
+.header-index {
+    height: 80px;
+    margin-top: 25px;
+}
+
+/*FIM DO HEADER*/
+
+/* INICIO BOTOES */
+
+.botao{
+    background-color: #4a90e2;
+    border-radius: 3px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font: normal normal 18px/40px "Aileron Regular", sans-serif;
+    text-decoration: none;
+}
+
+.botao-logo{
+    background-color: #4a90e2;
+    border-radius: 3px;
+    width: 245px;
+    height: 55px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: normal normal 18px/55px "Aileron Regular", sans-serif;
+}
+/*FIM BOTOES*/
+
+/*INICIO LOGO*/
+section#logo {
+    text-align: center;
+    height: 550px;
+    margin-top: 5%;
+}
+
+.texto-abaixo-logo{
+    color: #d2d2d2;
+    height: 109px;
+    width: 655px;
+    text-align: center;
+    margin: auto;
+    font-family: aileron;
+    font-size: 18px;
+    line-height: 1.89;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-weight: 50;   
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/*FIM LOGO*/
+
+/*INICIO CAIXAS DESCRITIVAS DE DIFERENCIAIS*/
+section#diferenciais {
+    text-align: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+section>figure {
+    float: left;
+}
+
+#diferenciais>figure {
+    width: 225px;
+    height: 325px;
+    border-radius: 3px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+    background-color: #ffffff;
+    padding: 2em;
+    margin: 1em;
+}
+
+.saiba-mais{
+    text-decoration: none;
+    height: 55px;
+    color: black;
+}
+
+.diferenciais-titulo {
+    color: #2c2e30;    
+    font-family: Aileron;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.diferenciais-titulo strong {
+    width: 158px;
+    height: 63px;
+    font-family: Aileron;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a90e2;
+}
+/*FIM CAIXAS DESCRITIVAS DE DIFERENCIAIS*/
+
+/*INICIO DEPOIMENTO*/
+.retangulo-depoimento{
+    background-color: #4a90e2;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#depoimento-texto{
+    float: left; 
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.nosso-compromisso{
+    color: white;
+}
+
+.texto-depoimento{
+    width: 250px;
+    margin-top: 25%;
+    font-size: normal;
+    margin-bottom: -15px;
+}
+
+.nome-pessoa{
+    color: white;
+    font-size: medium;
+}
+
+.profissao{
+    font-size: small;
+}
+
+#depoimento-foto{
+    float: right;
+    margin-right: 30%;
+    margin-top: 15%;
+}
+
+.foto-depoimento{
+    height: 350px;
+    width: 330px;
+    border-radius: 5px;
+}
+/*FIM DEPOIMENTO*/
+
+/*INICIO LOGO PRETA*/
+#logo-preta{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.logomarca-preta{
+    height: 15%;
+    width: 15%;
+}
+/*FIM LOGO PRETA*/
+
+/*INICIO FOOTER*/
+#footer-esquerda{
+    text-decoration: none;
+    color: #54565A;
+    float: left;
+    font-size: 15px;
+    word-spacing: 20px;
+    margin-left: 15%;
+}
+
+footer > section > a {
+    text-decoration: none;
+    color: #54565A;
+    word-spacing: normal;
+}
+
+#footer-direita{
+    float: right;
+    font-size: 15px;
+    text-decoration: none;
+    color: #54565A;
+    margin-right: 15%;
+}
+
+.icones-social{
+    width: 25px;
+    height: 25px;
+}
+/*FIM FOOTER*/
+
+
+/*PAGINA DE PEDIDOS*/
+/*HEADER*/
+header > section {
+    float: right;
+    font-size: 17px;
+    margin-right: 100px;
+    word-spacing: 15px;
+    font-family: "Aileron Regular";
+}
+
+header > section > a {
+    text-decoration: none;
+    color: white;
+    word-spacing: normal;
+    padding: 1px 5px;
+}
+
+.header-pedidos {
+    height: 80px;
+    background-color: #4990e2;
+    margin-bottom: 2em;
+}
+
+#header-esquerda{
+    width: 50px;
+    height: 80px;
+    float: left;
+    margin-left: 20%;
+}
+
+.logo-preta {
+    width: 50px;
+    height: 80px;
+}
+
+#header-direita{
+    height: 80px;
+    margin-right: 10%;
+    word-spacing: 10px;
+    margin-top: 1em;
+}
+
+
+/* FIM HEADER */
+
+.row {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 50%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+  }
+
+#form-pedido {
+    border-style: none;
+}
+
+.address {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0.25rem; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    border-style: none;
+}
+
+  .mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+.maps {
+    width: 100%;
+    height: 350px;
+    margin: 2em 0em;
+}
+/* INICIO FORMS
+
+
+
+fieldset{
+    border-color: transparent;
+    margin: auto;
+}
+
+input:hover{
+    background-color: #dddddd;
+}
+
+#formulario{
+    margin: auto auto 30px auto;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    display: block;
+    margin: 25px auto 10px auto; 
+}
+
+.menu-sabor{
+    float: left;
+    width: 45%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;    
+    box-shadow: 0px 2px 3px #E7EAEE;
+    -webkit-box-shadow: 0px 2px 3px #E7EAEE;
+    -moz-box-shadow: 0px 2px 3px #E7EAEE;
+    align-items: center;
+}
+
+.menu-tamanho{
+    float: right;
+    width: 45%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;    
+    box-shadow: 0px 2px 3px #E7EAEE;
+    -webkit-box-shadow: 0px 2px 3px #E7EAEE;
+    -moz-box-shadow: 0px 2px 3px #E7EAEE;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    box-sizing: border-box;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.endereço { 
+    width: 85%;
+    height: 60px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+    float: left;
+    margin: auto;    
+    text-align: center;
+    display: flex;
+    line-height: 60px;
+    border-radius: 5px;
+    border: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;    
+    -webkit-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+    align-content: center;
+}
+
+.maps {
+    margin: 1em 0em 1em 0em;
+}
+ */
+.botao-escuro{
+    background-color: #00244d;
+    border-radius: 3px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font: normal normal 18px/40px "Aileron Regular", sans-serif;
+    text-decoration: none;
+}
+
+#botao-confirma {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-confirma {
+    background:#4a90e2 no-repeat; 
+    cursor:pointer; 
+    width: 150px; 
+    height: 40px; 
+    border: none; 
+    color:white;
+    font: normal normal 18px/40px "Aileron Regular", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 1em;
+}
+
+#grid-sabores {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: aliceblue;
+    margin: 5em;
+    gap: 5em;
+}
+
+.grid-sabor {
+  max-width: 80%;
+  text-align: left;
+}
+
+
+/* INICIO CONTATO */
+
+#form-cliente {
+    margin: 1em 6em 1em 6em;
+}
+
+.form-cliente-title {
+    text-align: center;
+    margin: 4em 0em 2em 0em;
+}
+
+#usrform {
+    width: 100%;
+    font-weight: bold;
+    float: left;
+}
+
+.bloco-forms {
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid 1px #4a90e2;
+    box-shadow: aliceblue;
+    height: 25px;
+    margin: 5px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 13px;
+}
+
+.bloco-formstext {
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid 1px #4a90e2;
+    box-shadow: aliceblue;
+    height: 100px;
+    margin: 5px;
+    width: 100%;
+}

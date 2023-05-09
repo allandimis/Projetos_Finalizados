@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monte seu pedido - Platzi Pizzeria</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Pizzaria Platzi. Sabores incomparaveis, Ingredientes de alta qualidade e Compromisso de entrega.">
+    <link href="style.css" rel="stylesheet" /> <!-- para linkar com o css-->
+</head>
+
+<body id="pedidos">
+    <header class="header-pedidos">
+        <!-- Menu superior -->
+        <section id="header-esquerda">
+            <img class="logo-preta" src="imagens/logo_preta.svg" alt="logo">
+        </section>
+        <section id="header-direita">
+            <a href="index.html" class="header">Home</a>
+            <a href="sabores.html" class="header">Cardápio</a>
+            <a href="pedido.html" class="botao-escuro">Peça online</a>
+        </section>
+    </header>
+    <section id="form-cliente">
+        <div class="form-cliente-title">
+            <h1>ENVIE SEU COMENTARIO DUVIDA OU RECLAMAÇÃO</h1>
+        </div>
+        <div>
+            <h2>Nós valorizamos sua opinião e queremos saber sobre sua experiência em nossas pizzarias.</h2>
+            <p>Por favor preencha o formulário abaixo. *Campos Obrigatórios</p>
+        </div>
+        <div >
+            <form action="/action_page.php" id="usrform">
+                Seu nome:
+                <input type="text" id="fname" placeholder="Ex: Alexandre" class="bloco-forms">
+              </form>
+
+              <form action="/action_page.php" id="usrform">
+                Seu Telefone: 
+                <input type="text" name="usrname" placeholder="Ex:(11)99999-9999" class="bloco-forms">
+              </form>
+
+              <form action="/action_page.php" id="usrform">
+                Seu E-Mail: 
+                <input type="text" name="usrname" placeholder="Ex: seuemail@exemplo.com" class="bloco-forms">
+              </form>
+        </div>
+
+        <div>
+            <form action="/action_page.php">
+                <p>Deseja receber novidades?</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Sim</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Não</label><br>
+            </form>
+        </div>
+
+        <div>
+              <br>
+              <p><b>Sua mensagem:</b></p>
+              <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Seu texto aqui..." class="bloco-formstext"></textarea>
+        </div>
+    </section>
+
+    <footer>
+        <section id="footer-esquerda">
+            <a href="status.html">Status</a>
+            <a href="politicas.html">Privacy & Terms</a>
+            <a href="contact.html">Contact Us</a>
+        </section>
+
+        <section id="footer-direita">
+            <img src="imagens/bandeira-brasil.svg" />
+            <a href="http://instagram.com" target="_blank"> <img class="icones-social" src="imagens/Instagram_1.svg" />
+            </a>
+            <a href="http://facebook.com" target="_blank"> <img class="icones-social" src="imagens/Facebook_1.svg" />
+            </a>
+            <a href="http://twitter.com" target="_blank"> <img class="icones-social" src="imagens/Twitter_1.svg" /> </a>
+        </section>
+    </footer>
+
+</body> 
